@@ -10,6 +10,7 @@ for (let i = 1; i < 101; i++) {
 
      let scatola = document.createElement("div");
      scatola.classList.add("box");
+     scatola.classList.add("g-2");
      scatola.classList.add("container");
      if ( i % 3 == 0) {
       scatola.innerHTML = `Fizz`;
@@ -19,10 +20,11 @@ for (let i = 1; i < 101; i++) {
       scatola.innerHTML = `Buzz`;
       scatola.classList.add("buzz");
 
-     }  else if ( i % 15 == 0 ) {
+     }  else if ( i % 3 && i % 5 == 0 ) {
 
-      scatola.innerHTML = `giovanni`;
+      scatola.innerHTML = `FizzBuzz!`;
       scatola.classList.add("fizzbuzz");
+      console.log("FizzBuzz")
 
      } else {
 
